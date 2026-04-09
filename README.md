@@ -17,6 +17,7 @@ Scratch files are stored **inside** your project in the `.scratches` folder. Whe
 ## ABL Scratches view
 The ABL Scratches view allows you to manage your scratch files. From this view you can create, open, run and delete scratches.
 For each scratch, the last run timestamp is displayed in the list.
+It's also possible to set a custom 'Description' to the scratch and to choose a different Mode (gui, chui, batch).
 
 ### Actions
 - **New scratch**
@@ -31,6 +32,8 @@ For each scratch, the last run timestamp is displayed in the list.
   Removes the selected scratch and automatically closes the editor tab if it is currently open
 - **Open Scratch**
   Double-click (or right-click) to open the scratch file in the editor
+- **Set as description**
+  In the context menu of an opened scratch editor, the selected text can be used to set the 'Description' of the scratch
 
 ## Screenshot
 
@@ -40,12 +43,26 @@ For each scratch, the last run timestamp is displayed in the list.
 
 ## Settings
 
+### User / Workspace / Folder
+- **Run Mode**
+  The run mode when creating a new scratch (`Project setting`, `CHUI`, `GUI` or `Batch`)
+  Defaults to `Project setting`
+
 ### User only
-- **Enable debug logging**
-  Enables debug-level logging for this extension.
-  Defaults to `false`.
+- **Sort Column**
+  Sort column in the scratch grid (`Scratch` or `Last run`)
+  Defaults to `Scratch`
+- **Sort Direction**
+- The sort director of the sort column (`asc` or `desc`)
+  Default to 'desc'
+ 
 
 ## Support
+
+### Debugging
+To check debug logging, open the 'ABL Scratch Playground' logging channel in the OUTPUT view and set the log-level to `Debug`
+
+### Issues
 Please report issues and feature requests via the GitHub repository.
 
 ## Related Extensions
