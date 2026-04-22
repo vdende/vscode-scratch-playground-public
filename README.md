@@ -47,15 +47,16 @@ It's also possible to set a custom 'Description' to the scratch and to choose a 
 - **Run Mode**
   The run mode when creating a new scratch (`Project setting`, `CHUI`, `GUI` or `Batch`)
   Defaults to `Project setting`
+- **Initial Scratch Content**
+  The initial text inserted when creating a new scratch
 
 ### User only
 - **Sort Column**
   Sort column in the scratch grid (`Scratch` or `Last run`)
   Defaults to `Scratch`
 - **Sort Direction**
-- The sort director of the sort column (`asc` or `desc`)
-  Default to 'desc'
- 
+  The sort direction of the sort column (`asc` or `desc`)
+  Defaults to 'desc'
 
 ## Support
 
