@@ -71,7 +71,6 @@ It's also possible to set a custom 'Description' to the scratch and to choose a 
 
 #### Debugger
 With the Debug action (_button / Command Palette_), a scratch (with modes `gui` and `chui`) can be started with the `debugReady` port. For that, the port number has to be entered in the settings first. Also, set up a launch configuration, example:
-
 ```json
  {
    "version": "0.2.0",
@@ -84,11 +83,13 @@ With the Debug action (_button / Command Palette_), a scratch (with modes `gui` 
        "mode": "legacy",
        "port": 3099,
        "pause": true,
-       "localRoot": "${workspaceFolder}"
+       "localRoot": "${workspaceFolder}",
+       "refProjects": [ "ProjectA", "ProjectB" ]
      }
    ]
  }
 ```
+Use optional `refProjects` if your project relies on other workspace projects.
 
 When the warning message `11725` (_Use port 3099 for the Debugger to connect to_) appears, the debug launch configuration (`F11`) can be started. The debugger will wait on the first executable line. Click 'Continue' (F5) to go to the first breakpoint.
 
